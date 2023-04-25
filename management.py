@@ -15,7 +15,7 @@ ImagesSaveDir = IMAGESAVEDIR
 TempLogFile = TEMPLOGFILE
 
 # ログを取る間隔（秒）
-loggingTime = 10
+loggingTime = 600
 
 while True:
     bus.write_word_data(address_adt7410, configration_adt7410, 0x00)
