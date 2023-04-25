@@ -1,4 +1,4 @@
-
+from time import sleep
 import serial
 
 h = serial.Serial("/dev/ttyS5",baudrate=9600,timeout=0.5)
@@ -33,3 +33,5 @@ while True:
         writer = csv.writer(f)
         writer.writerow([dt_now_str, str(data)])
         #print("save temp")
+    sleep(600)
+h.close
