@@ -31,7 +31,6 @@ while True:
         dt_now = datetime.datetime.now()
         dt_now_str = dt_now.strftime('%Y_%m_%d-%H_%M_%S')
         writer = csv.writer(f)
-        writer.writerow([dt_now_str, str(data)])
-        #print("save temp")
+        writer.writerow([dt_now_str, str(v), str(i), str(w)])
     sleep(600)
 h.close
