@@ -1,6 +1,8 @@
 from time import sleep
 import serial
 import sys
+import datetime
+import csv
 
 rfcomm = serial.Serial("/dev/rfcomm0",baudrate=9600,timeout=0.5)
 
