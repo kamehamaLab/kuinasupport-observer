@@ -19,13 +19,7 @@ def main():
         os.makedirs('Images')
     print("Make Images Dir")
 
-    # create Log files
-    if not os.path.exists('Logs/RecodingLog.csv'):
-        with open('Logs/RecodingLog.csv', 'w') as f:
-            writer = csv.writer(f)
-            writer.writerow(["datetime", "filename"])
-    print("Make Logs/RecodingLog.csv")
-
+    # create Log file
     if not os.path.exists('Logs/TempLog.csv'):
         with open('Logs/TempLog.csv', 'w') as f:
             writer = csv.writer(f)

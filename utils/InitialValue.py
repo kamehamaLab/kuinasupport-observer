@@ -40,3 +40,6 @@ RECLOGFILE = 'Logs/RecodingLog.csv'
 
 # アップロードログファイル
 UPLOADLOGFILE = 'Logs/UploadLog.csv'
+
+# バッテリーログファイル
+BATTERRYLOGFILE = 'Logs/BatteryLog.csv'
