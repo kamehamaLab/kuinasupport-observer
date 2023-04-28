@@ -3,9 +3,10 @@ import serial
 import sys
 import datetime
 import csv
+from utils.InitialValue import BATTERRYLOGFILE
 
 rfcomm = serial.Serial("/dev/rfcomm0",baudrate=9600,timeout=0.5)
-
+batteryLogFile= BATTERRYLOGFILE
 
 while True:
     rfcomm.write([0xf0])
@@ -16,7 +17,7 @@ while True:
     i = float(rx[4]<<8|rx[5])/1000.0
     w = v * i
     print(v)
-    with open('Logs/BatteryLog.csv', 'a') as f:
+    with open(batteryLogFile, 'a') as f:
         dt_now = datetime.datetime.now()
         dt_now_str = dt_now.strftime('%Y_%m_%d-%H_%M_%S')
         writer = csv.writer(f)
