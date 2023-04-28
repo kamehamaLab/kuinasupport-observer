@@ -1,5 +1,6 @@
 # kuinasupport
 kuinasupportのデバイスを監視、データ収集するためのコード類
+UM24Cを用いた電力監視を追加。（Bluetoothを用いたシリアル通信）
 
 ## UM24C：ラズパイのbluetooth設定方法
 bluetoothctlを使ってペアリングをする
